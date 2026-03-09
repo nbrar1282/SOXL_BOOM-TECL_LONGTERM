@@ -1,0 +1,1147 @@
+{
+    "id": "CW8oWU12S6vEvn2Hh7jD",
+    "step": "root",
+    "name": "SOXL Growth v2.4.5 RL",
+    "collapsed?": false,
+    "collapsed_specified_weight": false,
+    "children": [
+        {
+            "id": "89611d63-1c70-495a-8bdc-8c1d87411c8d",
+            "step": "wt-cash-equal",
+            "collapsed?": false,
+            "collapsed_specified_weight": false,
+            "children": [
+                {
+                    "id": "97345c22-f4a2-49e0-b9e0-177472921db1",
+                    "step": "if",
+                    "collapsed?": false,
+                    "collapsed_specified_weight": false,
+                    "children": [
+                        {
+                            "id": "dd2c5d76-a175-4553-97f1-596584565631",
+                            "step": "if-child",
+                            "collapsed?": false,
+                            "collapsed_specified_weight": false,
+                            "children": [
+                                {
+                                    "id": "44523403-6d05-4a77-a5fc-5d689cecdb30",
+                                    "step": "wt-cash-equal",
+                                    "collapsed?": true,
+                                    "collapsed_specified_weight": true,
+                                    "children": [
+                                        {
+                                            "id": "c81b4bda-e36a-48fe-bb01-47a0356b8d95",
+                                            "step": "if",
+                                            "collapsed?": true,
+                                            "weight": {
+                                                "num": 100,
+                                                "den": 100
+                                            },
+                                            "collapsed_specified_weight": true,
+                                            "children": [
+                                                {
+                                                    "id": "62ec9dea-a109-455e-bb1b-3b63371510b2",
+                                                    "step": "if-child",
+                                                    "collapsed?": true,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "5e387a07-07a1-4c11-93ac-0125d33eb509",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": true,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "94b7dc09-9228-4e97-8e8f-bccfdc0eab97",
+                                                                    "step": "if",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "535ceb24-74de-4121-acfa-43a267132822",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "86a2cb26-c0aa-49cc-901c-f31c8410ca8d",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "1e32eed9-b6db-4b89-9b48-775d2b41c00c",
+                                                                                            "step": "filter",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "2b0e9222-bfb2-4d16-a266-bee2275288a6",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SOXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 14.05,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1807620944.75
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "e6ab4dd4-f780-41aa-8786-c8d4b7ee3fc8",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "ProShares UltraPro QQQ",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TQQQ",
+                                                                                                    "exchange": "XNAS",
+                                                                                                    "price": 20.88,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 6574227293.5199995
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "9a8602b8-16f1-4def-acca-0026899e5a9e",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily S&P 500 Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SPXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 61.59,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1762987759.02
+                                                                                                }
+                                                                                            ],
+                                                                                            "select?": true,
+                                                                                            "select-fn": "top",
+                                                                                            "select-n": "2",
+                                                                                            "sort-by?": true,
+                                                                                            "sort-by-fn": "cumulative-return",
+                                                                                            "sort-by-window-days": 21
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "standard-deviation-return",
+                                                                            "lhs-window-days": "100",
+                                                                            "lhs-val": "TQQQ",
+                                                                            "comparator": "lte",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-val": "3.8"
+                                                                        },
+                                                                        {
+                                                                            "id": "b8e613e6-d5c8-4012-98d0-5f87b14f639d",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "a819f763-41a2-4ab6-a79a-844ef47ec6fe",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "f5a6f91d-3396-4c97-a30b-f1d65f36420a",
+                                                                                            "step": "if",
+                                                                                            "collapsed?": true,
+                                                                                            "weight": {
+                                                                                                "num": 100,
+                                                                                                "den": 100
+                                                                                            },
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "e3c6d938-e377-48a7-90f3-1ce2f442a6b8",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "c509d1ea-6c5a-4edb-9898-87cd4ddc9d69",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": true,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "0185b075-cd9b-4d29-a9e1-cb1c7fcae4e7",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": true,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "bdaace02-fa63-4464-87f2-6ae58f5f0c02",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "b7ee7d1f-4ec6-48cf-9377-93f5ce78bc78",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "Direxion Daily Semiconductor Bear 3x Shares",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "SOXS",
+                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                    "price": 21.32,
+                                                                                                                                    "has_marketcap": false,
+                                                                                                                                    "dollar_volume": 1184380792.4
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "standard-deviation-return",
+                                                                                                                            "lhs-window-days": "30",
+                                                                                                                            "lhs-val": "TQQQ",
+                                                                                                                            "comparator": "gte",
+                                                                                                                            "rhs-fixed-value?": true,
+                                                                                                                            "rhs-val": "5.8"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "06459507-06ee-4cd0-9e80-a85bcffef2b1",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "8183f950-5469-4572-af57-5814b9a3ec6e",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "Direxion Daily S&P 500 Bull 3x Shares",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "SPXL",
+                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                    "price": 61.59,
+                                                                                                                                    "has_marketcap": false,
+                                                                                                                                    "dollar_volume": 1762987759.02
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": false,
+                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                    "lhs-window-days": "30",
+                                                                                                    "lhs-val": "TQQQ",
+                                                                                                    "comparator": "gte",
+                                                                                                    "rhs-fixed-value?": true,
+                                                                                                    "rhs-val": "50"
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "eab44dea-ce79-4a8d-9380-47395f1a0936",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "dd8f1e18-09e3-4a77-8d01-3f81bd7e3790",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": true,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "d13d298b-9c6e-4c52-a2fd-789747c549a6",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": true,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "c125994b-45dd-4842-952f-a500c18704fd",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "de56a216-28e7-4c78-a0f3-befe25d72977",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "SOXL",
+                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                    "price": 14.05,
+                                                                                                                                    "has_marketcap": false,
+                                                                                                                                    "dollar_volume": 1807620944.75
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "cumulative-return",
+                                                                                                                            "lhs-window-days": "8",
+                                                                                                                            "lhs-val": "TQQQ",
+                                                                                                                            "comparator": "lte",
+                                                                                                                            "rhs-fixed-value?": true,
+                                                                                                                            "rhs-val": "-20"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "db2c17dc-73bd-4428-b00a-ee9231c552f6",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "11b9d26c-8cd2-4a5b-8c5b-e137e98507b1",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "86e8e533-4243-420a-ac02-5cc2e55bb3f3",
+                                                                                                                                            "step": "if",
+                                                                                                                                            "collapsed?": true,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "bad46ed2-7303-4b76-a3ae-f8fe91e0cb3a",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "02a3ac6c-5d2a-4539-be79-9048fa4d1690",
+                                                                                                                                                            "step": "wt-cash-equal",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "id": "be9ce032-5a13-4ceb-a3ae-8538b00188b2",
+                                                                                                                                                                    "step": "filter",
+                                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "60a99f89-3894-477a-9778-c52f1c179751",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "Direxion Daily 20+ Year Treasury Bear 3x Shares",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "TMV",
+                                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                                            "price": 111.23,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 68229260.61
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "1f39c3d8-f316-4e1f-81d2-8e24e176929a",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "ProShares UltraPro Short QQQ",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "SQQQ",
+                                                                                                                                                                            "exchange": "XNAS",
+                                                                                                                                                                            "price": 41.08,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 11135127505.32
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "e1cbf36f-22a0-4436-8a9a-4855e2378438",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "Direxion Daily S&P 500 Bear 3x Shares",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "SPXS",
+                                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                                            "price": 21.67,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 1234725395.2
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "11895835-738a-4068-b143-b95a6431a5f0",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "Direxion Daily S&P 500 Bear 3x Shares",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "SPXS",
+                                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                                            "price": 21.67,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 1234725395.2
+                                                                                                                                                                        }
+                                                                                                                                                                    ],
+                                                                                                                                                                    "select?": true,
+                                                                                                                                                                    "select-fn": "bottom",
+                                                                                                                                                                    "select-n": "2",
+                                                                                                                                                                    "sort-by?": true,
+                                                                                                                                                                    "sort-by-fn": "cumulative-return",
+                                                                                                                                                                    "sort-by-window-days": "3"
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                                    "lhs-fn": "max-drawdown",
+                                                                                                                                                    "lhs-window-days": "200",
+                                                                                                                                                    "lhs-val": "TQQQ",
+                                                                                                                                                    "comparator": "lte",
+                                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                                    "rhs-val": "65"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "25d2bb46-d7e9-4c0b-8800-1db8943bff93",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "b4b32ee9-60ef-485a-9922-6c3e082788b7",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "SOXL",
+                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                            "price": 14.05,
+                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                            "dollar_volume": 1807620944.75
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": true
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": false,
+                                                    "lhs-fn": "standard-deviation-return",
+                                                    "lhs-window-days": "14",
+                                                    "lhs-val": "TQQQ",
+                                                    "comparator": "lte",
+                                                    "rhs-fixed-value?": true,
+                                                    "rhs-val": "18"
+                                                },
+                                                {
+                                                    "id": "3f109b35-e5fb-4bd3-b2ca-8c64c7a7ecf1",
+                                                    "step": "if-child",
+                                                    "collapsed?": true,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "32ed981b-e923-4b29-8fa8-d58829f50fb1",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": true,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "bafaa965-3ca8-4dde-9065-2817460807ee",
+                                                                    "step": "if",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "1623e537-e2f4-4990-9fc0-45ec9ca5eb57",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "3d5420cc-a6d4-401b-b56d-e472b1ddf896",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "4900c6c6-96af-461a-a253-83eab674b362",
+                                                                                            "step": "filter",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "29c149eb-20e2-40c5-b349-c47f7e7b51b3",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily 20+ Year Treasury Bear 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TMV",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 111.23,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 68229260.61
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "741166e3-16e3-4a94-bb8d-13b897db4bb6",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "ProShares UltraPro Short QQQ",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SQQQ",
+                                                                                                    "exchange": "XNAS",
+                                                                                                    "price": 41.08,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 11135127505.32
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a1d83c8c-53e8-4c63-ae95-34c384617318",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily S&P 500 Bear 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SPXS",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 21.67,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1234725395.2
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "895f33d3-41f6-4d98-ba4f-e5b839bc56fb",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily S&P 500 Bear 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SPXS",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 21.67,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1234725395.2
+                                                                                                }
+                                                                                            ],
+                                                                                            "select?": true,
+                                                                                            "select-fn": "bottom",
+                                                                                            "select-n": "2",
+                                                                                            "sort-by?": true,
+                                                                                            "sort-by-fn": "cumulative-return",
+                                                                                            "sort-by-window-days": "3"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "cumulative-return",
+                                                                            "lhs-window-days": "30",
+                                                                            "lhs-val": "TQQQ",
+                                                                            "comparator": "lte",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-fn": "relative-strength-index",
+                                                                            "rhs-window-days": "30",
+                                                                            "rhs-val": "-10"
+                                                                        },
+                                                                        {
+                                                                            "id": "fadfb976-d709-460d-852f-8a94762214e8",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "218cc31b-68dc-417c-be0a-4a405bfb76a8",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "f0e65645-5a07-46f3-baf1-be553e59f64b",
+                                                                                            "step": "filter",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "2ed0c937-6f01-4d88-b2fb-91fa5cae8ec5",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SOXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 14.05,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1807620944.75
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7a928391-91db-4d3a-8312-f9398d506292",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "ProShares UltraPro QQQ",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TQQQ",
+                                                                                                    "exchange": "XNAS",
+                                                                                                    "price": 20.88,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 6574227293.5199995
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "777adb0a-2705-4fac-8338-d0b3d43a273a",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TMF",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 8.84,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 397077383.04
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b8c8c547-9925-47d3-ba3a-5a6685418c80",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily S&P 500 Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SPXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 61.59,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1762987759.02
+                                                                                                }
+                                                                                            ],
+                                                                                            "select?": true,
+                                                                                            "select-fn": "top",
+                                                                                            "select-n": "3",
+                                                                                            "sort-by?": true,
+                                                                                            "sort-by-fn": "cumulative-return",
+                                                                                            "sort-by-window-days": 21
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "is-else-condition?": false,
+                            "lhs-fn": "max-drawdown",
+                            "lhs-window-days": "60",
+                            "lhs-val": "SOXL",
+                            "comparator": "gte",
+                            "rhs-fixed-value?": true,
+                            "rhs-val": "50"
+                        },
+                        {
+                            "id": "8adfc86a-7128-42d8-8400-e3985bf3a98f",
+                            "step": "if-child",
+                            "collapsed?": false,
+                            "collapsed_specified_weight": false,
+                            "children": [
+                                {
+                                    "id": "8cd2b9be-ecf2-4da6-8520-8e7481f82395",
+                                    "step": "wt-cash-equal",
+                                    "collapsed?": true,
+                                    "collapsed_specified_weight": true,
+                                    "children": [
+                                        {
+                                            "id": "aa6fd989-e502-44ff-b866-145bcac0353b",
+                                            "step": "if",
+                                            "collapsed?": true,
+                                            "weight": {
+                                                "num": 100,
+                                                "den": 100
+                                            },
+                                            "collapsed_specified_weight": true,
+                                            "children": [
+                                                {
+                                                    "id": "86c89236-0ec4-4925-b1d9-1ac80b7f5bff",
+                                                    "step": "if-child",
+                                                    "collapsed?": true,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "8f07f759-7086-471c-b501-04792aee7d82",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": true,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "9dcd84f3-81b8-4658-accb-42a0a496e3a2",
+                                                                    "step": "if",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "52582398-3973-466d-8790-a2c097a5a351",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "b23ea044-bb77-4969-94e7-d9f95f64d7f5",
+                                                                                    "step": "asset",
+                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "ticker": "SOXL",
+                                                                                    "exchange": "ARCX",
+                                                                                    "price": 15.5,
+                                                                                    "has_marketcap": false,
+                                                                                    "dollar_volume": 1284500298.5
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "standard-deviation-return",
+                                                                            "lhs-window-days": "105",
+                                                                            "lhs-val": "SOXL",
+                                                                            "comparator": "lte",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-val": "4.9226"
+                                                                        },
+                                                                        {
+                                                                            "id": "6170aaa2-abac-49d5-9fca-752375fbdf39",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "02d0b7c6-74bc-4954-9297-e5234ba21d4b",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "c6d35570-57b4-4150-a1ca-fb0f17a27111",
+                                                                                            "step": "if",
+                                                                                            "collapsed?": true,
+                                                                                            "weight": {
+                                                                                                "num": 100,
+                                                                                                "den": 100
+                                                                                            },
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "8c0b634f-b15d-4582-aecf-d984f5409f64",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "7de0e27a-9dcf-46c8-98ec-59f012217429",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": true,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "ae61162c-25e0-41de-b9bb-15b0cafeab08",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": true,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "b5260cc6-2633-42b2-8522-85ea6a6eb5ea",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "dc3b42a0-0409-4754-b2f4-97fb09f24cbc",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "Direxion Daily Semiconductor Bear 3x Shares",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "SOXS",
+                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                    "price": 23.65,
+                                                                                                                                    "has_marketcap": false,
+                                                                                                                                    "dollar_volume": 970744309.15
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "standard-deviation-return",
+                                                                                                                            "lhs-window-days": "30",
+                                                                                                                            "lhs-val": "SOXL",
+                                                                                                                            "comparator": "gte",
+                                                                                                                            "rhs-fixed-value?": true,
+                                                                                                                            "rhs-val": "5.4135"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "098aa1e7-19b3-45fd-ba1d-240641690edd",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "5e576487-471d-4021-963c-9073b3ac980b",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "6c332893-d189-4b47-8631-6b43be5bbd15",
+                                                                                                                                            "step": "filter",
+                                                                                                                                            "collapsed?": true,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "9108d8f0-d067-41c3-9ca1-b79a6fb3a80c",
+                                                                                                                                                    "step": "asset",
+                                                                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "ticker": "SOXL",
+                                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                                    "price": 14.05,
+                                                                                                                                                    "has_marketcap": false,
+                                                                                                                                                    "dollar_volume": 1807620944.75
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "c5fa3592-fbb6-4bf5-b6b8-cfa5a7ecebcc",
+                                                                                                                                                    "step": "asset",
+                                                                                                                                                    "name": "Direxion Daily S&P 500 Bull 3x Shares",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "ticker": "SPXL",
+                                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                                    "price": 61.59,
+                                                                                                                                                    "has_marketcap": false,
+                                                                                                                                                    "dollar_volume": 1762987759.02
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "9d862a82-e068-4df3-a7fc-0bdecf98d291",
+                                                                                                                                                    "step": "asset",
+                                                                                                                                                    "name": "ProShares UltraPro QQQ",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "ticker": "TQQQ",
+                                                                                                                                                    "exchange": "XNAS",
+                                                                                                                                                    "price": 20.88,
+                                                                                                                                                    "has_marketcap": false,
+                                                                                                                                                    "dollar_volume": 6574227293.5199995
+                                                                                                                                                }
+                                                                                                                                            ],
+                                                                                                                                            "select?": true,
+                                                                                                                                            "select-fn": "top",
+                                                                                                                                            "select-n": "2",
+                                                                                                                                            "sort-by?": true,
+                                                                                                                                            "sort-by-fn": "cumulative-return",
+                                                                                                                                            "sort-by-window-days": 21
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": false,
+                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                    "lhs-window-days": "30",
+                                                                                                    "lhs-val": "SOXL",
+                                                                                                    "comparator": "gte",
+                                                                                                    "rhs-fixed-value?": true,
+                                                                                                    "rhs-val": "57.49"
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "6a7e67a4-8a6f-45e0-a771-a0e466961bd1",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "2964d570-d55f-4c47-951f-d4b4f9ebf405",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": true,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "4d4d1107-de79-488e-b8b7-acb54302b592",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": true,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "a476996b-0b71-4569-a173-46e8e25af3bb",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "4d636012-6bd1-481b-a5ec-e9fe30ca97dd",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "SOXL",
+                                                                                                                                    "exchange": "ARCX",
+                                                                                                                                    "price": 15.5,
+                                                                                                                                    "has_marketcap": false,
+                                                                                                                                    "dollar_volume": 1284500298.5
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "cumulative-return",
+                                                                                                                            "lhs-window-days": "32",
+                                                                                                                            "lhs-val": "SOXL",
+                                                                                                                            "comparator": "lte",
+                                                                                                                            "rhs-fixed-value?": true,
+                                                                                                                            "rhs-val": "-12"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "ea6056cb-37cf-4680-bccf-f163b251d466",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "97cd97e3-6905-47d4-9c34-9745ccf8c33c",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "1815d2bc-b54e-41fd-a28e-bc9207d53997",
+                                                                                                                                            "step": "if",
+                                                                                                                                            "collapsed?": true,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "aa69e513-0c44-46f4-ac28-a15a8aac4c9d",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "3aeeb8d0-98cd-4b74-8b2b-2dbfbcafe2e5",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "Direxion Daily Semiconductor Bear 3x Shares",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "SOXS",
+                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                            "price": 23.65,
+                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                            "dollar_volume": 970744309.15
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                                    "lhs-fn": "max-drawdown",
+                                                                                                                                                    "lhs-window-days": "250",
+                                                                                                                                                    "lhs-val": "SOXL",
+                                                                                                                                                    "comparator": "lte",
+                                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                                    "rhs-val": "71"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "088a544f-6e11-4dac-818a-950e28784c0e",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "49764476-dbce-43cb-9a8c-815839bc4ea1",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "SOXL",
+                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                            "price": 15.5,
+                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                            "dollar_volume": 1284500298.5
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": true
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": false,
+                                                    "lhs-fn": "relative-strength-index",
+                                                    "lhs-window-days": "32",
+                                                    "lhs-val": "SOXL",
+                                                    "comparator": "lte",
+                                                    "rhs-fixed-value?": true,
+                                                    "rhs-val": "62.1995"
+                                                },
+                                                {
+                                                    "id": "95c4b1fc-7072-4d88-ac26-1c9029a275e1",
+                                                    "step": "if-child",
+                                                    "collapsed?": true,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "f89715f6-33bb-49e8-ad5d-d316613aa292",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": true,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "d158699b-778d-4d4c-8b5a-40496bc166f6",
+                                                                    "step": "if",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "8595da9c-c250-4c04-aece-1e48fe138afb",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "c476d542-d9a2-4633-baba-8ce494a4b9ac",
+                                                                                    "step": "asset",
+                                                                                    "name": "Direxion Daily Semiconductor Bear 3x Shares",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "ticker": "SOXS",
+                                                                                    "exchange": "ARCX",
+                                                                                    "price": 23.65,
+                                                                                    "has_marketcap": false,
+                                                                                    "dollar_volume": 970744309.15
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "relative-strength-index",
+                                                                            "lhs-window-days": "32",
+                                                                            "lhs-val": "SOXL",
+                                                                            "comparator": "gte",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-fn": "relative-strength-index",
+                                                                            "rhs-window-days": "30",
+                                                                            "rhs-val": "50"
+                                                                        },
+                                                                        {
+                                                                            "id": "74669a9b-8248-4f6b-ae36-d8c5b770c25a",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": true,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "fc24d354-5f99-45f4-9a7d-09e85fe47959",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": true,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "defe9829-5b21-4627-b303-d100fa790728",
+                                                                                            "step": "filter",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "d2e00f00-c731-45b2-b256-3a75ecd71f34",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily Semiconductor Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SOXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 14.05,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1807620944.75
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "12fac9d0-b478-4c17-8221-1c2033132723",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "ProShares UltraPro QQQ",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TQQQ",
+                                                                                                    "exchange": "XNAS",
+                                                                                                    "price": 20.88,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 6574227293.5199995
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "4deece5e-3e3b-4c15-be35-d8a4fe314836",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "TMF",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 8.84,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 397077383.04
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "2faa9b19-ba4e-4a78-ac6e-c65324dce302",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "Direxion Daily S&P 500 Bull 3x Shares",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "SPXL",
+                                                                                                    "exchange": "ARCX",
+                                                                                                    "price": 61.59,
+                                                                                                    "has_marketcap": false,
+                                                                                                    "dollar_volume": 1762987759.02
+                                                                                                }
+                                                                                            ],
+                                                                                            "select?": true,
+                                                                                            "select-fn": "top",
+                                                                                            "select-n": "3",
+                                                                                            "sort-by?": true,
+                                                                                            "sort-by-fn": "cumulative-return",
+                                                                                            "sort-by-window-days": 21
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "is-else-condition?": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "description": "OOS Mar 1 2023",
+    "rebalance": "daily"
+}

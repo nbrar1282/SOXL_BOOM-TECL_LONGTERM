@@ -1,0 +1,867 @@
+{
+    "id": "bytihBYn2N0Gfw0URHnL",
+    "step": "root",
+    "name": "(see bottom block) TECL For The Long Term (v7) | Less VIX | KMLM signal boost (Buy Copy)",
+    "collapsed?": false,
+    "collapsed_specified_weight": false,
+    "children": [
+        {
+            "id": "e1c0d6ed-7284-4a3a-82cf-c0a948f1f61d",
+            "step": "wt-cash-equal",
+            "collapsed?": false,
+            "collapsed_specified_weight": false,
+            "children": [
+                {
+                    "id": "7be32e36-839f-4f46-8fcb-7b261161bae1",
+                    "step": "if",
+                    "collapsed?": false,
+                    "weight": {
+                        "num": 100,
+                        "den": 100
+                    },
+                    "collapsed_specified_weight": false,
+                    "children": [
+                        {
+                            "id": "13f5edc1-b2b9-421f-8763-65fe944b1969",
+                            "step": "if-child",
+                            "collapsed?": false,
+                            "collapsed_specified_weight": false,
+                            "children": [
+                                {
+                                    "id": "075dba49-8a9c-43e4-be70-b02de09d7c4f",
+                                    "step": "wt-cash-equal",
+                                    "collapsed?": false,
+                                    "collapsed_specified_weight": true,
+                                    "children": [
+                                        {
+                                            "id": "ef42607d-6db4-4633-b6c5-fcbdedc3d97d",
+                                            "step": "if",
+                                            "collapsed?": true,
+                                            "collapsed_specified_weight": true,
+                                            "children": [
+                                                {
+                                                    "id": "f3c9d56a-adf9-4131-8212-2a5a3df81b67",
+                                                    "step": "if-child",
+                                                    "collapsed?": false,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "ed9bd580-beba-469f-a904-b6ae25b4b35d",
+                                                            "step": "group",
+                                                            "name": "UVXY+75%BIL",
+                                                            "collapsed?": false,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "59bef54a-b995-4843-acd2-27987054be1a",
+                                                                    "step": "wt-cash-specified",
+                                                                    "collapsed?": false,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "65090b62-c34f-48f1-8199-6a14c2f171f0",
+                                                                            "step": "asset",
+                                                                            "name": "ProShares Ultra VIX Short-Term Futures ETF",
+                                                                            "collapsed?": false,
+                                                                            "weight": {
+                                                                                "num": "25",
+                                                                                "den": 100
+                                                                            },
+                                                                            "collapsed_specified_weight": false,
+                                                                            "ticker": "UVXY",
+                                                                            "exchange": "BATS"
+                                                                        },
+                                                                        {
+                                                                            "id": "b4a5df21-f9e1-4989-b879-3723d74c79d8",
+                                                                            "step": "asset",
+                                                                            "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                            "collapsed?": false,
+                                                                            "weight": {
+                                                                                "num": 75,
+                                                                                "den": 100
+                                                                            },
+                                                                            "collapsed_specified_weight": false,
+                                                                            "ticker": "BIL",
+                                                                            "exchange": "ARCX"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": false,
+                                                    "lhs-fn": "relative-strength-index",
+                                                    "lhs-window-days": "10",
+                                                    "lhs-val": "TQQQ",
+                                                    "comparator": "gt",
+                                                    "rhs-fixed-value?": true,
+                                                    "rhs-val": "79"
+                                                },
+                                                {
+                                                    "id": "65fc7b01-5e53-4ff5-b422-0786dc3e2932",
+                                                    "step": "if-child",
+                                                    "collapsed?": false,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "f0803ee3-1fc8-461f-ace6-e20bba915c61",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": false,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "3af8d389-3a07-4a75-9f60-c742854de094",
+                                                                    "step": "if",
+                                                                    "collapsed?": false,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "c1c350b1-dcdb-4f14-89be-7acdd2649574",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": false,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "3585b937-6559-40f6-bc4e-4a2d44facc8d",
+                                                                                    "step": "group",
+                                                                                    "name": "UVXY+75%BIL",
+                                                                                    "collapsed?": false,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "729de137-4f7d-4960-8697-a848708a36a3",
+                                                                                            "step": "wt-cash-specified",
+                                                                                            "collapsed?": false,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "098044dc-67af-4688-9059-0caecfe064a6",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "ProShares Ultra VIX Short-Term Futures ETF",
+                                                                                                    "collapsed?": false,
+                                                                                                    "weight": {
+                                                                                                        "num": "25",
+                                                                                                        "den": 100
+                                                                                                    },
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "UVXY",
+                                                                                                    "exchange": "BATS"
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "8cccad88-eb55-4379-b10f-a4abac529a27",
+                                                                                                    "step": "asset",
+                                                                                                    "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                    "collapsed?": false,
+                                                                                                    "weight": {
+                                                                                                        "num": 75,
+                                                                                                        "den": 100
+                                                                                                    },
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "ticker": "BIL",
+                                                                                                    "exchange": "ARCX"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "relative-strength-index",
+                                                                            "lhs-window-days": "10",
+                                                                            "lhs-val": "SPY",
+                                                                            "comparator": "gt",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-val": "80"
+                                                                        },
+                                                                        {
+                                                                            "id": "73376249-8e03-4bec-87a9-da76d6934c4b",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": false,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "985bfb5b-ee03-4ead-9783-3930e782395c",
+                                                                                    "step": "group",
+                                                                                    "name": "KMLM Switcher | SimplyGreen | No short",
+                                                                                    "collapsed?": false,
+                                                                                    "weight": {
+                                                                                        "num": 0,
+                                                                                        "den": 100
+                                                                                    },
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "169a9429-9336-4805-aa14-58bba4b5f202",
+                                                                                            "step": "wt-cash-equal",
+                                                                                            "collapsed?": false,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "027fc2c3-b64b-4d2a-a5a2-efc02ec2875a",
+                                                                                                    "step": "if",
+                                                                                                    "collapsed?": false,
+                                                                                                    "weight": {
+                                                                                                        "num": "100",
+                                                                                                        "den": 100
+                                                                                                    },
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "e2451031-afa1-4c98-aac0-17235b2ee793",
+                                                                                                            "step": "if-child",
+                                                                                                            "collapsed?": false,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "f4ea9fee-c648-427f-9a13-ab0d10503126",
+                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                    "collapsed?": false,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "0e44b5cc-fd46-440e-8c2f-cabf5849fa7e",
+                                                                                                                            "step": "if",
+                                                                                                                            "collapsed?": false,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "bd201dda-e210-4c1f-842c-878522246e01",
+                                                                                                                                    "step": "if-child",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "96079b42-a084-4844-a634-07aaa4e6e66d",
+                                                                                                                                            "step": "asset",
+                                                                                                                                            "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                                                            "collapsed?": false,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "ticker": "BIL",
+                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                                                    "lhs-fn-params": {
+                                                                                                                                        "window": 10
+                                                                                                                                    },
+                                                                                                                                    "lhs-val": "XLK",
+                                                                                                                                    "comparator": "gt",
+                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                    "rhs-val": "81"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "id": "363920c1-9991-4986-bb9d-9163acc7382a",
+                                                                                                                                    "step": "if-child",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "e10941da-842f-4139-bb1a-bbd10cac9892",
+                                                                                                                                            "step": "asset",
+                                                                                                                                            "name": "Direxion Daily Technology Bull 3x Shares",
+                                                                                                                                            "collapsed?": false,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "ticker": "TECL",
+                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                                    "is-else-condition?": true
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "is-else-condition?": false,
+                                                                                                            "lhs-fn": "relative-strength-index",
+                                                                                                            "lhs-fn-params": {
+                                                                                                                "window": 10
+                                                                                                            },
+                                                                                                            "lhs-val": "XLK",
+                                                                                                            "comparator": "gt",
+                                                                                                            "rhs-fn": "relative-strength-index",
+                                                                                                            "rhs-fn-params": {
+                                                                                                                "window": 10
+                                                                                                            },
+                                                                                                            "rhs-val": "KMLM"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "id": "433c0136-0849-416e-9b81-d71c5bc0aaa4",
+                                                                                                            "step": "if-child",
+                                                                                                            "collapsed?": false,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "c5e71e10-b215-491c-9b0a-38aab3bd9f37",
+                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                    "collapsed?": false,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "11053338-7434-4734-81d1-65caebc3a057",
+                                                                                                                            "step": "if",
+                                                                                                                            "collapsed?": false,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "a5c33129-e60d-4542-9966-d5e98c4abff1",
+                                                                                                                                    "step": "if-child",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "98725387-38df-490d-a6b9-c5dfc005c563",
+                                                                                                                                            "step": "asset",
+                                                                                                                                            "name": "Direxion Daily Technology Bull 3x Shares",
+                                                                                                                                            "collapsed?": false,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "ticker": "TECL",
+                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                                                    "lhs-fn-params": {
+                                                                                                                                        "window": 10
+                                                                                                                                    },
+                                                                                                                                    "lhs-val": "XLK",
+                                                                                                                                    "comparator": "lt",
+                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                    "rhs-val": "29"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "id": "7b219df7-a12c-4765-b575-b6faa6a83786",
+                                                                                                                                    "step": "if-child",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "5f39fe34-540a-491a-9402-1b2f58b72ff7",
+                                                                                                                                            "step": "asset",
+                                                                                                                                            "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                                                            "collapsed?": false,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "ticker": "BIL",
+                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                                    "is-else-condition?": true
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "is-else-condition?": true
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "is-else-condition?": false,
+                            "lhs-fn": "current-price",
+                            "lhs-val": "SPY",
+                            "comparator": "gt",
+                            "rhs-fn": "moving-average-price",
+                            "rhs-window-days": "200",
+                            "rhs-val": "SPY"
+                        },
+                        {
+                            "id": "c04b4e62-2b85-499f-b79a-77d193a4850f",
+                            "step": "if-child",
+                            "collapsed?": false,
+                            "collapsed_specified_weight": false,
+                            "children": [
+                                {
+                                    "id": "449eddf6-4a68-4964-8292-720440b587cd",
+                                    "step": "wt-cash-equal",
+                                    "collapsed?": false,
+                                    "collapsed_specified_weight": true,
+                                    "children": [
+                                        {
+                                            "id": "c3544c2a-224a-41ea-b5c7-8d4e35698af5",
+                                            "step": "if",
+                                            "collapsed?": true,
+                                            "collapsed_specified_weight": true,
+                                            "children": [
+                                                {
+                                                    "id": "de0660cc-06f7-430a-bced-1f2134686777",
+                                                    "step": "if-child",
+                                                    "collapsed?": false,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "51c50308-799e-4d4e-be28-1854ccf6436a",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": false,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "d34a93dc-194f-4285-bb1a-6c06d0a1350b",
+                                                                    "step": "asset",
+                                                                    "name": "Direxion Daily Technology Bull 3x Shares",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "ticker": "TECL",
+                                                                    "exchange": "ARCX",
+                                                                    "price": 31.72,
+                                                                    "has_marketcap": false,
+                                                                    "dollar_volume": 82035691.39999999
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": false,
+                                                    "lhs-fn": "relative-strength-index",
+                                                    "lhs-window-days": "10",
+                                                    "lhs-val": "TQQQ",
+                                                    "comparator": "lt",
+                                                    "rhs-fixed-value?": true,
+                                                    "rhs-val": "31"
+                                                },
+                                                {
+                                                    "id": "4710b604-c0e0-4806-868e-b0129fc7baaa",
+                                                    "step": "if-child",
+                                                    "collapsed?": false,
+                                                    "collapsed_specified_weight": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "15d63ed1-a052-4b58-bf9b-4bba70634a9a",
+                                                            "step": "wt-cash-equal",
+                                                            "collapsed?": false,
+                                                            "collapsed_specified_weight": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "2d0e6817-ddc2-4fe2-874c-9788cf66d738",
+                                                                    "step": "if",
+                                                                    "collapsed?": true,
+                                                                    "collapsed_specified_weight": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "4e19955f-0725-4904-829d-db8ec2f82531",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": false,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "0aac193c-6f11-4da7-aa4e-8beefc3831ea",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": false,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "9bd54f6b-1c6d-49d6-b5cf-4d877ba6423e",
+                                                                                            "step": "asset",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "ticker": "SPXL",
+                                                                                            "price": 40.29,
+                                                                                            "has_marketcap": false,
+                                                                                            "dollar_volume": 500681896.08
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": false,
+                                                                            "lhs-fn": "relative-strength-index",
+                                                                            "lhs-window-days": "10",
+                                                                            "lhs-val": "SPXL",
+                                                                            "comparator": "lt",
+                                                                            "rhs-fixed-value?": true,
+                                                                            "rhs-val": "29"
+                                                                        },
+                                                                        {
+                                                                            "id": "2449258e-f62b-4079-a86b-6206bfa0c8ab",
+                                                                            "step": "if-child",
+                                                                            "collapsed?": false,
+                                                                            "collapsed_specified_weight": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "8b7d7c70-afb4-43a2-92cb-3e435b5712d1",
+                                                                                    "step": "wt-cash-equal",
+                                                                                    "collapsed?": false,
+                                                                                    "collapsed_specified_weight": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "95ee9267-85f3-4ba7-ab86-82f408fd56b7",
+                                                                                            "step": "if",
+                                                                                            "collapsed?": true,
+                                                                                            "collapsed_specified_weight": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "868282d6-91e4-4094-b835-015bbe7ebb77",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": false,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "88c36204-5b0b-40fd-b884-44a153108c7f",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": false,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "5ec4e898-85c3-4ca6-89f4-c8349c04feb7",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": false,
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "9ce9d245-3148-403f-b954-1bfb6d99494b",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": false,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "4abe7f62-be8e-4adf-a8a1-edadca0eb348",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "4c24a1ee-cf3c-4286-84fd-50dec4de6cad",
+                                                                                                                                            "step": "group",
+                                                                                                                                            "name": "UVXY+85%BIL",
+                                                                                                                                            "collapsed?": false,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "947b9121-0530-4765-959f-af0c33807ce9",
+                                                                                                                                                    "step": "wt-cash-specified",
+                                                                                                                                                    "collapsed?": false,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "8b76e1d3-2029-4863-9bae-c23529297d0e",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "ProShares Ultra VIX Short-Term Futures ETF",
+                                                                                                                                                            "collapsed?": false,
+                                                                                                                                                            "weight": {
+                                                                                                                                                                "num": "15",
+                                                                                                                                                                "den": 100
+                                                                                                                                                            },
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "UVXY",
+                                                                                                                                                            "exchange": "BATS"
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                            "id": "c578efea-94f9-45e4-a192-72612043a126",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                                                                            "collapsed?": false,
+                                                                                                                                                            "weight": {
+                                                                                                                                                                "num": 85,
+                                                                                                                                                                "den": 100
+                                                                                                                                                            },
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "BIL",
+                                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "relative-strength-index",
+                                                                                                                            "lhs-window-days": "10",
+                                                                                                                            "lhs-val": "UVXY",
+                                                                                                                            "comparator": "gt",
+                                                                                                                            "rhs-fixed-value?": true,
+                                                                                                                            "rhs-val": "84"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "a2f25b40-4d73-4ea8-b5b0-50e926aca170",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": false,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "b500d717-50d9-4460-8772-86a416ccb2c9",
+                                                                                                                                    "step": "asset",
+                                                                                                                                    "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                                                    "collapsed?": false,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "ticker": "BIL",
+                                                                                                                                    "exchange": "ARCX"
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": false,
+                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                    "lhs-window-days": "10",
+                                                                                                    "lhs-val": "UVXY",
+                                                                                                    "comparator": "gt",
+                                                                                                    "rhs-fixed-value?": true,
+                                                                                                    "rhs-val": "74"
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c850aaed-ebe1-4b54-9cff-053573584e01",
+                                                                                                    "step": "if-child",
+                                                                                                    "collapsed?": true,
+                                                                                                    "collapsed_specified_weight": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "e41ec8f6-cd44-4b10-96e9-2c64ebd3e99b",
+                                                                                                            "step": "wt-cash-equal",
+                                                                                                            "collapsed?": true,
+                                                                                                            "collapsed_specified_weight": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "44d88d1f-f997-433c-851f-27d316279858",
+                                                                                                                    "step": "if",
+                                                                                                                    "collapsed?": true,
+                                                                                                                    "weight": {
+                                                                                                                        "num": "100",
+                                                                                                                        "den": 100
+                                                                                                                    },
+                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "id": "c188777a-caa1-4cb6-b1d0-6946cd9bf46c",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "8784eb46-220a-4fa2-8b6d-535f8600c989",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "c1c1dc4a-601e-4958-aadd-e622b351479a",
+                                                                                                                                            "step": "if",
+                                                                                                                                            "collapsed?": true,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "9e80af95-4c11-4618-8d05-3c577d3f37ee",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "4dc9a945-40c5-4436-9047-7cf08b90f181",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "BIL",
+                                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                                                                    "lhs-fn-params": {
+                                                                                                                                                        "window": 10
+                                                                                                                                                    },
+                                                                                                                                                    "lhs-val": "XLK",
+                                                                                                                                                    "comparator": "gt",
+                                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                                    "rhs-val": "81"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "fef26a20-972b-447d-b306-b90baba50d37",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "c2d57839-78ee-437a-aa78-1f03363939cd",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "Direxion Daily Technology Bull 3x Shares",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "TECL",
+                                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": true
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": false,
+                                                                                                                            "lhs-fn": "relative-strength-index",
+                                                                                                                            "lhs-fn-params": {
+                                                                                                                                "window": 10
+                                                                                                                            },
+                                                                                                                            "lhs-val": "XLK",
+                                                                                                                            "comparator": "gt",
+                                                                                                                            "rhs-fn": "relative-strength-index",
+                                                                                                                            "rhs-fn-params": {
+                                                                                                                                "window": 10
+                                                                                                                            },
+                                                                                                                            "rhs-val": "KMLM"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id": "1fcddde3-dab8-4223-b6fb-c6078aafe1ba",
+                                                                                                                            "step": "if-child",
+                                                                                                                            "collapsed?": true,
+                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "id": "4429a02e-5c17-4386-9b4a-a6c7e61daf73",
+                                                                                                                                    "step": "wt-cash-equal",
+                                                                                                                                    "collapsed?": true,
+                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "id": "3c9b762c-489d-4b2a-be90-e884c6057f51",
+                                                                                                                                            "step": "if",
+                                                                                                                                            "collapsed?": true,
+                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "id": "241ea256-6d4c-4b34-9177-63982c8404fc",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "4ec6e573-7dd2-48f6-8efb-d22fe44a2ef5",
+                                                                                                                                                            "step": "asset",
+                                                                                                                                                            "name": "Direxion Daily Technology Bull 3x Shares",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "ticker": "TECL",
+                                                                                                                                                            "exchange": "ARCX"
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": false,
+                                                                                                                                                    "lhs-fn": "relative-strength-index",
+                                                                                                                                                    "lhs-fn-params": {
+                                                                                                                                                        "window": 10
+                                                                                                                                                    },
+                                                                                                                                                    "lhs-val": "XLK",
+                                                                                                                                                    "comparator": "lt",
+                                                                                                                                                    "rhs-fixed-value?": true,
+                                                                                                                                                    "rhs-val": "29"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "id": "3a0919bf-b4fe-4e7f-9d3a-83081a7c8032",
+                                                                                                                                                    "step": "if-child",
+                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "id": "7c1607c3-e2e7-424c-8d3c-d2f0f2cb881d",
+                                                                                                                                                            "step": "wt-cash-equal",
+                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "id": "5348da80-853c-4cb1-a709-33605dd3be72",
+                                                                                                                                                                    "step": "filter",
+                                                                                                                                                                    "collapsed?": true,
+                                                                                                                                                                    "collapsed_specified_weight": true,
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "e2261f51-7da5-4ec3-843b-0ae7529352e6",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "ProShares UltraPro Short QQQ",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "SQQQ",
+                                                                                                                                                                            "exchange": "XNAS",
+                                                                                                                                                                            "price": 41.84,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 5641968229.68
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "id": "e1f2888d-d225-4dea-8c6e-6c7a28b2d877",
+                                                                                                                                                                            "step": "asset",
+                                                                                                                                                                            "name": "Vanguard Short-Term Bond ETF",
+                                                                                                                                                                            "collapsed?": true,
+                                                                                                                                                                            "collapsed_specified_weight": true,
+                                                                                                                                                                            "ticker": "BSV",
+                                                                                                                                                                            "exchange": "ARCX",
+                                                                                                                                                                            "price": 76.08,
+                                                                                                                                                                            "has_marketcap": false,
+                                                                                                                                                                            "dollar_volume": 131478564.96
+                                                                                                                                                                        }
+                                                                                                                                                                    ],
+                                                                                                                                                                    "select?": true,
+                                                                                                                                                                    "select-fn": "top",
+                                                                                                                                                                    "select-n": "1",
+                                                                                                                                                                    "sort-by?": true,
+                                                                                                                                                                    "sort-by-fn": "relative-strength-index",
+                                                                                                                                                                    "sort-by-window-days": "9"
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                                    "is-else-condition?": true
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "is-else-condition?": true
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "is-else-condition?": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "is-else-condition?": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "is-else-condition?": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "is-else-condition?": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "description": "Slightly modded version of Dereck Nielsen's algo with higher returns during most 1/2/3/5 year periods from Jan 2012 - present.",
+    "rebalance": "daily"
+}
