@@ -12,8 +12,9 @@ warnings.filterwarnings('ignore')
 
 # ─── TELEGRAM CONFIGURATION ───────────────────────────────────────────────────
 # Keep these secure!
-TELEGRAM_BOT_TOKEN = "8359908471:AAFbxtPSGnNUfCRyHZgHt0Zu4Nj4cDy8agE"
-TELEGRAM_CHAT_ID   = "7745251853"
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def send_telegram(text: str):
     """Sends a formatted message to your Telegram chat."""
